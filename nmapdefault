@@ -1,0 +1,67 @@
+Principais comandos NMAP
+
+-p
+Você pode determinar que uma porta ou sequencia de portas seja varrida, sendo
+assim, ele não executa a varredura apenas em portas baixas:
+Nmap –p 22 192.168.1.1
+Nmap –p 22-90 192.168.1.0/24
+Nmap –p 22,55,90 192.168.1.1
+
+-g
+Define a porta de origem. Como sabemos, geralmente as portas de origem são
+portas altas (acima de 1024).
+Com o Nmap, podemos dizer que a requisição ou o Scan está partindo de uma
+porta baixa:
+Nmap –g 53 192.168.1.1
+Nmap –g 22 192.168.1.0/24
+
+-sP
+Ping scan: Algumas vezes é necessário saber se um determinado host ou rede está
+no ar. Nmap pode enviar pacotes ICMP “echo request” para verificar se
+determinado host ou rede está ativa. Hoje em dia, existem muitos filtros que
+rejeitam os pacotes ICMP “echo request”, então envia um pacote TCP ACK para a
+porta 80 (default) e caso receba RST o alvo está ativo. A terceira técnica envia um
+pacote SYN e espera um RST ou SYN-ACK.
+Nmap –sP 192.168.1.254
+Nmap –sP 192.168.1.0/24
+
+-sn
+Ping Scan: Durante o Scan, o Nmap verifica o status da porta, porém, com a opção
+–sn ele verifica apenas se a máquina está viva, sem efetuar scan de portas.
+Nmap –sn 192.168.1.254
+Nmap –sn 192.168.1.0/24
+
+-sL
+List Scan: Com esta opção o Nmap verifica quantos IPs ele irá verificar. Com esta
+opção ele não varre as máquinas, mas te retorna uma lista de IPs que podem ser
+varridos em uma determinada rede.
+Nmap –sL 192.168.1.0/24
+
+-O
+OS detection: É possível descobrir qual o sistema operacional da vítima, ou chegar
+o mais próximo possível.
+Nmap –O 192.168.1.254
+Nmap –O 192.168.1.0/24
+
+--A
+Advanced: O Nmap efetua todas as varreduras possíveis para trazer o máximo de
+informações sobre o alvo, sendo assim, todas as informações possíveis.
+Nmap –A 192.168.1.254
+Nmap –A 192.168.1.0/24
+
+-R
+Sempre resolver DNS: Com esta opção, ele sempre tentará resolver DNS, ou seja,
+ele sempre tentará descobrir o hostname do alvo baseado em consulta DNS.
+Nmap –R 192.168.1.254
+Nmap –R 192.168.1.0/24
+
+-v
+Verbosity Level: Você pode obter em tela, tudo o que o Nmap está fazendo.
+A opção –vv traz mais detalhes
+Nmap –v 192.168.1.1
+Nmap –vv 192.168.1.0/24
+
+--open
+Open Ports: Verifica apenas as portas abertas ou possivelmente abertas.
+Nmap –-open 192.168.1.1
+Nmap --open 192.168.1.0/24
