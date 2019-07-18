@@ -1,0 +1,27 @@
+HASHCAT
+
+hashcat –h
+Quebrando hashes de forma simples (Straight):
+hashcat hashes.txt word1.txt
+
+Quebrando hashes de forma combinada (Combination):
+hashcat --attack-mode 1 hashes.txt /tmp/word1.txt /tmp/word2.txt
+
+Se você setar apenas o caminho das wordlists, ele irá utilizar todas as wls da pasta
+
+Quebrando hashes de forma combinada, porém, setando 10 threads e
+arquivos de regras:
+hashcat --attack-mode 1 --rules-file combinator.rule --threads 10 hashes.txt word1.txt
+word2.txt
+
+
+
+Setando a hash a ser quebrada (ex: SHA1):
+hashcat --attack-mode 1 --hash-mode 100 --remove hashes.txt word1.txt word2.txt
+
+Utilizando o modo Permutation, e setando alternância no mínimo de 1 e com o
+máximo de 7 caracteres
+hashcat --attack-mode 4 --perm-min 1 --perm-max 7 hashes.txt word.txt word2.txt
+
+Utilizando o modo Brute Force:
+hashcat --attack-mode 3 hashes.txt
