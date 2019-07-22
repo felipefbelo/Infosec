@@ -3,9 +3,10 @@ Danilo Singh
 Felipe Belo
 
 Sobre o projeto:
-- A soluÁ„o foi desenvolvido em C#.NET e possui uma interface Windows Forms.
-- A pasta "src" contÈm o cÛdigo fonte que pode ser aberto atravÈs do Visual Studio.
-- A soluÁ„o È composta por 2 projetos, sendo:
-   * Si.Criptografia : Projeto Windows Forms, que contÈm a classe principal para realizaÁ„o da criptografia, chamada de EncryptionHelper.
-   * Si.Criptografia.Tests: Projeto de teste unit·rio para validaÁ„o da implementaÁ„o realizada
-- A pasta "bin" contÈm o projeto j· compilado, que pode ser usado para testar a soluÁ„o, caso n„o possui a o Visual Studio
+- O projeto visa demonstrar de forma simples, a crifragem e decifragem de caracteres 
+- A solu√ß√£o foi desenvolvido em C#.NET e possui uma interface Windows Forms.
+- A pasta "src" cont√©m o c√≥digo fonte que pode ser aberto atrav√©s do Visual Studio.
+- A solu√ß√£o √© composta por 2 projetos, sendo:
+   * Si.Criptografia : Projeto Windows Forms, que cont√©m a classe principal para realiza√ß√£o da criptografia, chamada de EncryptionHelper.
+   * Si.Criptografia.Tests: Projeto de teste unit√°rio para valida√ß√£o da implementa√ß√£o realizada
+- A pasta "bin" cont√©m o projeto j√° compilado, que pode ser usado para testar a solu√ß√£o, caso n√£o possui a o Visual Studio
