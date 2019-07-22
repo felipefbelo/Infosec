@@ -1,0 +1,9 @@
+C:\Users\danil\OneDrive\Graduação\Sistemas de Informação UFMT\Criptografia e Segurança de Dados\Si.Criptografia\Si.Criptografia.Tests\bin\Release\Si.Criptografia.Tests.dll
+C:\Users\danil\OneDrive\Graduação\Sistemas de Informação UFMT\Criptografia e Segurança de Dados\Si.Criptografia\Si.Criptografia.Tests\bin\Release\Si.Criptografia.Tests.pdb
+C:\Users\danil\OneDrive\Graduação\Sistemas de Informação UFMT\Criptografia e Segurança de Dados\Si.Criptografia\Si.Criptografia.Tests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\danil\OneDrive\Graduação\Sistemas de Informação UFMT\Criptografia e Segurança de Dados\Si.Criptografia\Si.Criptografia.Tests\bin\Release\Si.Criptografia.exe
+C:\Users\danil\OneDrive\Graduação\Sistemas de Informação UFMT\Criptografia e Segurança de Dados\Si.Criptografia\Si.Criptografia.Tests\bin\Release\Si.Criptografia.pdb
+C:\Users\danil\OneDrive\Graduação\Sistemas de Informação UFMT\Criptografia e Segurança de Dados\Si.Criptografia\Si.Criptografia.Tests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\danil\OneDrive\Graduação\Sistemas de Informação UFMT\Criptografia e Segurança de Dados\Si.Criptografia\Si.Criptografia.Tests\obj\Release\Si.Criptografia.Tests.csprojResolveAssemblyReference.cache
+C:\Users\danil\OneDrive\Graduação\Sistemas de Informação UFMT\Criptografia e Segurança de Dados\Si.Criptografia\Si.Criptografia.Tests\obj\Release\Si.Criptografia.Tests.dll
+C:\Users\danil\OneDrive\Graduação\Sistemas de Informação UFMT\Criptografia e Segurança de Dados\Si.Criptografia\Si.Criptografia.Tests\obj\Release\Si.Criptografia.Tests.pdb

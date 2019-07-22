@@ -1,0 +1,8 @@
+d:\documentos\visual studio 2013\Projects\Si.Criptografia\Si.Criptografia\bin\Debug\Si.Criptografia.exe.config
+d:\documentos\visual studio 2013\Projects\Si.Criptografia\Si.Criptografia\bin\Debug\Si.Criptografia.exe
+d:\documentos\visual studio 2013\Projects\Si.Criptografia\Si.Criptografia\bin\Debug\Si.Criptografia.pdb
+d:\documentos\visual studio 2013\Projects\Si.Criptografia\Si.Criptografia\obj\Debug\Si.Criptografia.Properties.Resources.resources
+d:\documentos\visual studio 2013\Projects\Si.Criptografia\Si.Criptografia\obj\Debug\Si.Criptografia.csproj.GenerateResource.Cache
+d:\documentos\visual studio 2013\Projects\Si.Criptografia\Si.Criptografia\obj\Debug\Si.Criptografia.exe
+d:\documentos\visual studio 2013\Projects\Si.Criptografia\Si.Criptografia\obj\Debug\Si.Criptografia.pdb
+D:\Documentos\Visual Studio 2013\Projects\Si.Criptografia\Si.Criptografia\obj\Debug\Si.Criptografia.MainForm.resources

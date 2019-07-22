@@ -1,0 +1,7 @@
+d:\documentos\visual studio 2013\Projects\Si.Criptografia\Si.Criptografia.Tests\obj\Debug\Si.Criptografia.Tests.csprojResolveAssemblyReference.cache
+d:\documentos\visual studio 2013\Projects\Si.Criptografia\Si.Criptografia.Tests\bin\Debug\Si.Criptografia.Tests.dll
+d:\documentos\visual studio 2013\Projects\Si.Criptografia\Si.Criptografia.Tests\bin\Debug\Si.Criptografia.Tests.pdb
+d:\documentos\visual studio 2013\Projects\Si.Criptografia\Si.Criptografia.Tests\bin\Debug\Si.Criptografia.exe
+d:\documentos\visual studio 2013\Projects\Si.Criptografia\Si.Criptografia.Tests\bin\Debug\Si.Criptografia.pdb
+d:\documentos\visual studio 2013\Projects\Si.Criptografia\Si.Criptografia.Tests\obj\Debug\Si.Criptografia.Tests.dll
+d:\documentos\visual studio 2013\Projects\Si.Criptografia\Si.Criptografia.Tests\obj\Debug\Si.Criptografia.Tests.pdb
