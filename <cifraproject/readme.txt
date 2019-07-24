@@ -3,7 +3,7 @@ Danilo Singh
 Felipe Belo
 
 Sobre o projeto:
-- O projeto visa demonstrar de forma simples, a crifragem e decifragem de caracteres 
+- O projeto visa demonstrar de forma simples, a cifragem e decifragem de caracteres 
 - A solução foi desenvolvido em C#.NET e possui uma interface Windows Forms.
 - A pasta "src" contém o código fonte que pode ser aberto através do Visual Studio.
 - A solução é composta por 2 projetos, sendo:
