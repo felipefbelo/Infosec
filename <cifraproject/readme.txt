@@ -1,6 +1,7 @@
 Alunos: 
 Danilo Singh
 Felipe Belo
+#desenvolvido na graduação de si-ufmt em 2015
 
 Sobre o projeto:
 - O projeto visa demonstrar de forma simples, a cifragem e decifragem de caracteres 
