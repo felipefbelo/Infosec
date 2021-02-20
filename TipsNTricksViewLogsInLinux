@@ -1,0 +1,28 @@
+
+
+-> wc -l access.log   (numero de linhas)
+
+-> head -n1 access.log (ver primeira linha)
+
+->cat access.log | cut -d " " -f 1   (delimita por espaço mostrando o primeiro campo)
+*varia de log para log a informaçao que quer ser mostrada
+
+->cat access.log | cut -d " " -f 1 | sort -u   (mostra todas infos IP sem repetir)   
+
+->cat access.log | cut -d " " -f 1 | sort | uniq -c  (mostra  quantidade de ocorrencias que a consulta teve)
+   ->cat access.log | cut -d " " -f 1 | sort | uniq -c  (organiza de forma numerica)
+
+*indentificado o ip do atacante, filtra mais infos
+
+->cat access.log | grep "177.138.28.7"  (mostra tudo do determinado ip)  
+   ->cat access.log | grep "177.138.28.7" | head -n1 (a primeira apariçao do ip)  
+   ->cat access.log | grep "177.138.28.7" | tail -n1 (a ultima apariçao do ip)
+
+*pode ser filtrado tbm ao lado do grep "ip" | grep "ferramenta de scan ex nmap" 
+
+->cat access.log | grep "177.138.28.7" | cut -d '"' -f2 | uniq -c  (ve a quantidade de requisições dentro do campo aspas")
+*pode ser trocado por { ou [ do campo aspas
+   ->cat access.log | grep "177.138.28.7" | cut -d "]" -f2 | grep "200"   (requisições que entraram no servidor após o ])
+
+*ver acesso a determinado diretorio sensivel 
+->cat access.log | grep "177.138.28.7" | grep "admin"    (ou "restrito")
