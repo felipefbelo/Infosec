@@ -1,5 +1,3 @@
-- - script webrecon.sh
-
 #!/bin/bash
 for palavra in $(cat wordlistsites.txt)
 do
