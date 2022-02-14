@@ -1,7 +1,4 @@
-* usar : ./ghdb.sh sitealvo.com.br
-
-ghdb.sh
-
+#usar : ./ghdb.sh sitealvo.com.br
 #!/bin/bash
 SEARCH="firefox"
 ALVO="$1"
